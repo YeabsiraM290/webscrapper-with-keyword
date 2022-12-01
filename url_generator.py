@@ -7,7 +7,7 @@ def get_url(key_term, amount):
     urls = []
     domains = []
     print("Starting...")
-    fetched_urls = list(search(key_term, num=amount, start=amount, stop=amount * 5))
+    fetched_urls = list(search(key_term, num=amount, start=amount, stop=amount * 2, pause=2))
     
     for index in range(0, amount) :
        
@@ -17,7 +17,7 @@ def get_url(key_term, amount):
         domains.append( urlparse(fetched_urls[index]).netloc)
     if(len(urls) < amount):
         sleep(10)
-        fetched_urls = list(search(key_term, num=amount, start=amount*2, stop=amount * 6))
+        fetched_urls = list(search(key_term, num=amount, start=amount*2, stop=amount * 3, pause=2))
     
         for index in range(0, amount - len(urls)) :
         
