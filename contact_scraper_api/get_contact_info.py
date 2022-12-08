@@ -51,8 +51,9 @@ def get_contact_info(url):
         if(not validNumber(phone_no)):
             match_phone.remove(phone_no)
 
+    data = {"email":match_email, "phone": match_phone}
    
-    return {"email:":match_email, "phone": match_phone}
+    return data
 
 def validNumber(phone_nuber):
     pattern = re.compile("^[\dA-Z]{3}-[\dA-Z]{3}-[\dA-Z]{4}$", re.IGNORECASE)

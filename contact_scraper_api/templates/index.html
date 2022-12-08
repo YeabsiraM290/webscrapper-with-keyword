@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="{{ url_for('static', path='styles/style.css') }}"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome-ContactScraper</title>
+  </head>
+  <body>
+    <img
+      class="background-img"
+      src="{{ url_for('static', path='images/background.webp') }}"
+      alt=""
+    />
+    <div class="main-con">
+      
+        <header class="intro-heading">Welcome to Contact-Scraper</header>
+        <p class="intor-note">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ipsam
+          eveniet nemo deserunt at laborum aspernatur dolores saepe consequuntur
+          qui optio quae animi repudiandae, vitae iure cupiditate minima id
+          dicta! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Excepturi omnis alias voluptatem officia reprehenderit laboriosam
+          voluptatibus. Enim, nulla. Suscipit quo eligendi eum officia nobis
+          impedit! Ipsam iste qui quis maiores.
+        </p>
+     
+
+      <div class="search-input">
+        <input class="search-field" placeholder="Enter keyword">
+        <button class="search-btn">Search</button>
+      </div>
+    </div>
+  </body>
+</html>
